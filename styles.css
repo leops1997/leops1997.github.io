@@ -1,98 +1,94 @@
-/* Reset or normalize CSS */
-* {
+/* styles.css */
+
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-/* Global styles */
-body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
     background-color: #f0f0f0;
     color: #333;
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-/* Header styles */
+/* Header styling */
 header {
-    background-color: #007bff;
-    color: #fff;
-    padding: 10px 0;
-}
-
-header h1 {
-    font-size: 2rem;
-    margin: 0;
-    padding: 10px;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Main content section */
-.section {
-    padding: 40px 0;
-}
-
-.section h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-}
-
-.section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
-}
-
-/* Footer styles */
-footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 1rem;
     text-align: center;
 }
 
-.social-links {
+header nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
 }
 
-.social-links li {
+header nav ul li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 1rem;
 }
 
-.social-links li a {
+header nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-size: 1.2rem;
+    font-weight: bold;
 }
 
-.social-links li a:hover {
-    text-decoration: underline;
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 4rem 0;
+    background-color: #444;
+    color: #fff;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #ff6600;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #e64d00;
+}
+
+/* Content sections */
+.content {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
