@@ -1,24 +1,22 @@
-title: My Robotics Site
-description: "A site about robotics and autonomous systems"
-author:
-  name: Your Name
-  email: youremail@example.com
-  bio: "Robotics enthusiast focused on autonomous systems, AI, and sensor fusion."
-
-# Theme settings
-remote_theme: pages-themes/cayman@v0.2.0
+remote_theme: mmistakes/minimal-mistakes
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-paginate
   - jekyll-sitemap
-
-# Site navigation
-navbar:
-  - title: "Home"
-    url: "/"
-  - title: "About"
-    url: "/about/"
-  - title: "Projects"
-    url: "/projects/"
-  - title: "Blog"
-    url: "/blog/"
+title: Your Site Title
+author:
+  name: Your Name
+  #avatar: /assets/images/profile.png # Place your profile image in assets/images
+  bio: 'A brief description about you.'
+  location: City, Country
+  links:
+    - label: "GitHub"
+      icon: "fab fa-github"
+      url: "https://github.com/yourusername"
+    - label: "Twitter"
+      icon: "fab fa-twitter"
+      url: "https://twitter.com/yourtwitter"
+    # Add more social links as needed
+permalink: /:categories/:title/
