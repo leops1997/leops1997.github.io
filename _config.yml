@@ -8,7 +8,7 @@ plugins:
 title: Your Site Title
 author:
   name: Your Name
-  #avatar: /assets/images/profile.png # Place your profile image in assets/images
+  avatar: /assets/images/profile.png # Place your profile image in assets/images
   bio: 'A brief description about you.'
   location: City, Country
   links:
