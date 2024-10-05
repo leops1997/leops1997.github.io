@@ -1,15 +1,8 @@
-remote_theme: mmistakes/minimal-mistakes
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-archives
-  - jekyll-paginate
-  - jekyll-sitemap
-title: Your Site Title
+# Site settings
+title: My Robotics Site
 author:
   name: Your Name
-  #avatar: /assets/images/profile.png # Place your profile image in assets/images
-  bio: 'A brief description about you.'
+  bio: 'A robotics enthusiast focusing on autonomous systems and AI.'
   location: City, Country
   links:
     - label: "GitHub"
@@ -18,5 +11,22 @@ author:
     - label: "Twitter"
       icon: "fab fa-twitter"
       url: "https://twitter.com/yourtwitter"
-    # Add more social links as needed
+
+# Theme setup
+remote_theme: mmistakes/minimal-mistakes
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-archives
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# Site settings
 permalink: /:categories/:title/
+paginate: 5
+paginate_path: "/page:num/"
+
+# SEO settings
+description: "A site dedicated to robotics projects, research, and tutorials."
