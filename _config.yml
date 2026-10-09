@@ -18,7 +18,6 @@ plugins:
 
 exclude:
   - Makefile
-  - CNAME
   - LICENSE
   - update.sh
   - Gemfile

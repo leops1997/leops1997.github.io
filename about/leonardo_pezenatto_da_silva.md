@@ -1,6 +1,11 @@
-# Eng. Leonardo Pezenatto da Silva
+# MSc. Eng. Leonardo Pezenatto da Silva
 
-Bachelor in Mechatronics Engineering from the Federal Institute of Santa Catarina (IFSC). Master's student in Automation and Systems Engineering at UFSC. Postgraduate in Project Management from FGV. Currently holds the position of Autonomous Robot Software Developer at Pollux, part of Accenture and the position of Researcher in Autonomous Vehicles at Software/Hardware Integration Lab (LISHA) at UFSC. Has experience with programming languages C++, Python, use of ROS, MoveIt and Gazebo platforms in robotics development and simulation. Knowledge of Linux/Embedded Linux and Git.
-dfhdh
+Master’s degree in Automation and Systems Engineering from the Federal University of Santa
+Catarina (UFSC). Postgraduate in Project Management from Fundação Getulio Vargas (FGV).
+Bachelor in Mechatronics Engineering from the Federal Institute of Santa Catarina (IFSC). Currently
+works as a Software Engineer Specialist in research and development of autonomous
+robots at Accenture. Has experience with C/C++ and Python programming languages, as well
+as ROS, MoveIt, and Gazebo for robotics development and simulation. Possesses knowledge
+of Linux/Embedded Linux and Git, Robotics, Autonomous Vehicles and Machine Learning.
 
 [LinkedIn](https://www.linkedin.com/in/leonardo-pezenatto-da-silva-a17037173/)
