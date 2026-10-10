@@ -1,14 +1,13 @@
 ---
-sort: 2
+sort: 3
 ---
 
 # Publications
 
-Scientific papers, theses and other works published by the Robotics in a Nutshell collaborators.
+Scientific papers, theses and other works published.
 
-## Leonardo Pezenatto da Silva
 
-### Conference Papers
+## Conference Papers
 
 - **Enabling On-the-Fly Automotive Suspension Health Monitoring with Vision-based Vibration Model.** Leonardo Pezenatto da Silva, Antônio Augusto Fröhlich, José Luis Conradi Hoffmann, Luiz Fernando Martins Pastuch. In *2025 XV Symposium on Computing Systems Engineering (SBESC)*, pp. 1–6, 2025. [DOI: 10.1109/SBESC68008.2025.11288814](https://doi.org/10.1109/SBESC68008.2025.11288814)
 

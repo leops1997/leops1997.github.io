@@ -1,7 +1,9 @@
-# Robotics in a Nutshell
+# The Autonomy Notebook
 
-Dive into the fascinating world of robotics, where innovation meets intelligence. At Robotics in a Nutshell, we explore robotics, providing you with an easy and comprehensive repository of knowledge, tutorials, and insights.
+*Engineering notes on robots that think and move. By Leonardo Pezenatto.*
 
-Whether you are a seasoned engineer, a curious enthusiast, or someone new to the field, our blog offers a wealth of resources. Discover in-depth guides on autonomous systems, tips for building your own robots, and intriguing curiosities about the latest advancements in technology.
+Welcome to The Autonomy Notebook, a hands-on collection of knowledge about autonomous systems, written from the workbench and the research lab. Here you will find practical tutorials, engineering tips and research insights on robotics, autonomous vehicles, computer vision and machine learning.
 
-Join us on this journey to understand the complexities of robotic systems and enhance your skills in the ever-evolving landscape of automation and artificial intelligence. Let’s learn, innovate, and inspire together!
+Whether you are a seasoned engineer, a curious enthusiast, or someone new to the field, these notes are meant to make complex robotic systems easier to understand and build. Expect in-depth guides on ROS, perception, motion planning and simulation, along with a look at the latest advancements in autonomy.
+
+Let's learn, build and innovate together!
