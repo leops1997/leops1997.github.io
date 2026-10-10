@@ -6,85 +6,9 @@ sort: 1
 
 Whether it is a self-driving car, a warehouse AMR or a delivery drone, almost every autonomous robot follows the same basic structure: it **senses** the world, **understands** it, **decides** what to do and **acts**, over and over again, while a **safety** layer watches everything.
 
-```mermaid
-flowchart LR
-    subgraph SENSORS [Sensors]
-        CAM["Camera"]
-        LIDAR["LiDAR / Radar"]
-        IMU["IMU"]
-        GNSS["GNSS"]
-        ENC["Wheel Encoders"]
-    end
+![Architecture of an autonomous robot: sensors feed perception, which updates the world model used by navigation and planning; control drives the actuators, the robot moves and the loop repeats, while a safety layer monitors every module](images/autonomous_robot_architecture.svg)
 
-    subgraph PERCEPTION [Perception]
-        FUSION["Sensor Fusion"]
-        DET["Object Detection<br/>& Tracking"]
-        LOC["Localization<br/>& SLAM"]
-    end
-
-    subgraph WORLD [World Model]
-        MAP["Maps"]
-        OBS["Obstacles &<br/>Predictions"]
-        STATE["Robot State"]
-    end
-
-    subgraph NAVIGATION [Navigation & Planning]
-        MISSION["Mission Planner"]
-        BEHAVIOR["Behavior /<br/>Decision Making"]
-        MOTION["Motion Planner"]
-    end
-
-    subgraph CONTROL [Control]
-        CTRL["Trajectory<br/>Tracking Controller"]
-    end
-
-    subgraph ACTUATION [Actuation]
-        ACT["Motors, Steering<br/>& Brakes"]
-    end
-
-    subgraph SAFETY [Safety & Supervision]
-        MON["Health Monitoring<br/>& Diagnostics"]
-        ESTOP["Emergency Stop<br/>& Safe Fallback"]
-    end
-
-    CAM --> FUSION
-    LIDAR --> FUSION
-    IMU --> FUSION
-    GNSS --> LOC
-    ENC --> LOC
-    FUSION --> DET
-    FUSION --> LOC
-    DET --> OBS
-    LOC --> STATE
-    LOC --> MAP
-    MAP --> MISSION
-    OBS --> BEHAVIOR
-    STATE --> BEHAVIOR
-    MISSION --> BEHAVIOR
-    BEHAVIOR --> MOTION
-    MOTION --> CTRL
-    STATE --> CTRL
-    CTRL --> ACT
-    ACT -. robot moves, world changes .-> SENSORS
-
-    SENSORS -.-> MON
-    PERCEPTION -.-> MON
-    NAVIGATION -.-> MON
-    CONTROL -.-> MON
-    MON --> ESTOP
-    ESTOP == override ==> ACT
-
-    classDef sense fill:#e3f2fd,stroke:#1e88e5,color:#0d47a1
-    classDef think fill:#ede7f6,stroke:#5e35b1,color:#311b92
-    classDef act fill:#e8f5e9,stroke:#43a047,color:#1b5e20
-    classDef safe fill:#ffebee,stroke:#e53935,color:#b71c1c
-    class CAM,LIDAR,IMU,GNSS,ENC,FUSION,DET,LOC sense
-    class MAP,OBS,STATE,MISSION,BEHAVIOR,MOTION think
-    class CTRL,ACT act
-    class MON,ESTOP safe
-```
-
-The colors group the blocks by role: **blue** for sensing and perception, **purple** for understanding and decision making, **green** for acting and **red** for safety.
+The colors group the blocks by role: **blue** for sensing, **purple** for deciding, **green** for acting and **red** for safety.
 
 ## The building blocks
 
